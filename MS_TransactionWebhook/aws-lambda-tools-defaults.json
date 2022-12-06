@@ -1,0 +1,16 @@
+{
+  "region" : "us-east-1",
+  "profile" : "default",
+  "configuration" : "Release",
+  "framework"     : "net6.0",
+  "function-name" : "MS_TransactionWebhook",
+  "function-handler" : "MS_TransactionWebhook::MS_TransactionWebhook.Function::FunctionHandler",
+  "function-memory-size" : 128,
+  "function-role": "arn:aws:iam::944815463862:role/MS_Lambda_Caller",
+  "function-timeout"     : 900,
+  "function-runtime"     : "dotnet6",
+  "function-subnets"     : "subnet-948f3ff3",
+  "function-security-groups" : "sg-18cba552",
+  "dead-letter-target-arn"   : "arn:aws:sqs:us-east-1:944815463862:MS_AddOut",
+  "tracing-mode"             : "PassThrough"
+}

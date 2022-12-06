@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+        <AWSProjectType>Lambda</AWSProjectType>
+        <RootNamespace>AddOutLambda</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Amazon.Lambda.APIGatewayEvents" Version="2.5.0" />
+      <PackageReference Include="Amazon.Lambda.Core" Version="2.1.0" />
+      <PackageReference Include="Amazon.Lambda.Serialization.Json" Version="2.1.0" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="7.0.0" />
+      <PackageReference Include="YellowDog.Thirdparty.Authentication" Version="1.0.2" />
+      <PackageReference Include="YellowDog.Thirdparty.S3" Version="2.0.0" />
+    </ItemGroup>
+
+</Project>
